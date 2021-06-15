@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:5.0 AS base
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS base
 WORKDIR /src
 COPY *.sln .
 COPY DecaBank.Test/*.csproj DecaBank.Test/
