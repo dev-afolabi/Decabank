@@ -16,7 +16,7 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore DecaBank/DecaBank.tests/DecaBank.Tests.csproj
+      run: dotnet restore DecaBank/DecaBank.Tests/DecaBank.Tests.csproj
     - name: Build
       run: dotnet build --no-restore DecaBank/DecaBank.Tests/DecaBank.Tests.csproj
     - name: Test
