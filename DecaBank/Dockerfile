@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS base
 WORKDIR /src
 COPY *.sln .
-COPY DecaBank.Test/*.csproj DecaBank.Test/
+COPY DecaBank.Tests/*.csproj DecaBank.Tests/
 COPY DecaBank.Presentation/*.csproj DecaBank.Presentation/
 
 RUN dotnet restore
