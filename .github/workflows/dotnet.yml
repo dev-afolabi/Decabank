@@ -7,19 +7,26 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  build_ums:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET
+    - name: Run tests
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 5.0
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore DecaBank/DecaBank.Tests/DecaBank.Tests.csproj
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore DecaBank/DecaBank.Tests/DecaBank.Tests.csproj
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal DecaBank/DecaBank.Tests/DecaBank.Tests.csproj
+    - name: Build and deploy the Docker image
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        APP_NAME: ${{ secrets.APP_NAME }}
+      run: |
+         cd ./DecaBank
+         docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+         heroku container:push web -a $APP_NAME
+         heroku container:release web -a $APP_NAME

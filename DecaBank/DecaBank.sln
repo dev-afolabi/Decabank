@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecaBank.Presentation", "DecaBank.Presentation\DecaBank.Presentation.csproj", "{EDF5AC36-21D1-474F-B3EA-193D36657AF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecaBank.Presentation", "DecaBank.Presentation\DecaBank.Presentation.csproj", "{EDF5AC36-21D1-474F-B3EA-193D36657AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecaBank.Tests", "DecaBank.Tests\DecaBank.Tests.csproj", "{04ABB6D9-2A5A-4C54-A032-F59ABE0F7804}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EDF5AC36-21D1-474F-B3EA-193D36657AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDF5AC36-21D1-474F-B3EA-193D36657AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDF5AC36-21D1-474F-B3EA-193D36657AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04ABB6D9-2A5A-4C54-A032-F59ABE0F7804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04ABB6D9-2A5A-4C54-A032-F59ABE0F7804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04ABB6D9-2A5A-4C54-A032-F59ABE0F7804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04ABB6D9-2A5A-4C54-A032-F59ABE0F7804}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
