@@ -1,0 +1,15 @@
+[
+  {
+    "firstname": "william",
+    "lastname": "anderson",
+    "sex": 0,
+    "email": "william@gmail.com",
+    "phone": "08037271361",
+    "address": {
+      "street": "No 3, Johnson boulevard",
+      "city": "ikeja",
+      "state": "Lagos",
+      "country": "Nigeria"
+    }
+  }
+]
