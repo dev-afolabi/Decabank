@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DecaBank.Cores
+namespace DecaBank.Core
 {
     public class Class1
     {
