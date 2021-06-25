@@ -4,7 +4,7 @@ COPY *.sln .
 COPY DecaBank.Tests/*.csproj DecaBank.Tests/
 COPY DecaBank.Presentation/*.csproj DecaBank.Presentation/
 COPY DecaBank.Data/*.csproj DecaBank.Data/
-COPY DecaBank.Models/*.csproj DecaBank.Model/
+COPY DecaBank.Model/*.csproj DecaBank.Model/
 COPY DecaBank.Core/*.csproj DecaBank.Core/
 
 RUN dotnet restore
