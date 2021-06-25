@@ -8,6 +8,9 @@ COPY DecaBank.Core/*.csproj DecaBank.Core/
 
 RUN dotnet restore
 
+RUN curl --silent --location https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install --yes nodejs
+
 COPY . .
 
 #Testing
