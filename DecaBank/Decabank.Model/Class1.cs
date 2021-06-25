@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Decabank.Model
+namespace DecaBank.Model
 {
     public class Class1
     {

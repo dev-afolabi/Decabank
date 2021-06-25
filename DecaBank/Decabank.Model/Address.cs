@@ -1,4 +1,5 @@
-﻿namespace DecaBank.Models
+﻿
+namespace DecaBank.Models
 {
     public class Address
     {
