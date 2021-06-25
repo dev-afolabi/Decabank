@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecaBank.Tests", "DecaBank.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecaBank.Core", "DecaBank.Core\DecaBank.Core.csproj", "{4F22E182-E394-4441-A368-FEA6F251F967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecaBank.Model", "DecaBank.Model\DecaBank.Model.csproj", "{4000C416-1ED0-442C-861F-55A778015C09}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{4F22E182-E394-4441-A368-FEA6F251F967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F22E182-E394-4441-A368-FEA6F251F967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F22E182-E394-4441-A368-FEA6F251F967}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4000C416-1ED0-442C-861F-55A778015C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4000C416-1ED0-442C-861F-55A778015C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4000C416-1ED0-442C-861F-55A778015C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4000C416-1ED0-442C-861F-55A778015C09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
