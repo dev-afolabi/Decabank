@@ -12,10 +12,7 @@ using System.Text.Json;
 namespace DecaBank.Data
 {
     public class Preseeder
-    {
-
-        private static readonly bool isDev = (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development");
-         
+    {         
 
         //static string path = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\DecaBank.Data\\Data.Json\\";
         static string path = "src/DecaBank.Data/Data.Json/";
@@ -58,12 +55,6 @@ namespace DecaBank.Data
                 }
 
                 //Seed Users with 1(one) Admin User
-
-                if (isDev)
-                {
-
-                }
-
                 var appUsers = GetSampleData<AppUser>(File.ReadAllText(path + "Customer.json"));
                 var (adminCount, customerCount) = (0, 0);
 
