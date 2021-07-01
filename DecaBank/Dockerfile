@@ -31,7 +31,7 @@ RUN dotnet publish -c Release -o /src/publish
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
 WORKDIR /app
 COPY --from=publish /src/publish .
-COPY --from=publish /src/DecaBank.Data/Data.Json/Customer.json .
+COPY --from=publish /src/DecaBank.Data/Data.json/Customer.json .
 
 
 
