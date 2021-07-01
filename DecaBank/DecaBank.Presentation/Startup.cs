@@ -55,7 +55,7 @@ namespace DecaBank.Presentation
 
             app.UseRouting();
 
-            Preseeder.EnsurePopulated(app);
+            //Preseeder.EnsurePopulated(app);
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,10 +11,9 @@ using System.Text.Json;
 namespace DecaBank.Data
 {
     public class Preseeder
-    {         
-
-        //static string path = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\DecaBank.Data\\Data.Json\\";
-        static string path = "src/DecaBank.Data/Data.Json/";
+    {
+        
+        static string path = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\DecaBank.Data\\Data.Json\\";
 
         private const string adminPassword = "Secret@123";
         private const string regularPassword = "P@ssw0rd";
