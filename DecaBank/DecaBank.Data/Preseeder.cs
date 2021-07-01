@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -12,7 +13,12 @@ namespace DecaBank.Data
 {
     public class Preseeder
     {
-        static string path = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\DecaBank.Data\\Data.Json\\";
+
+        private static readonly bool isDev = (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development");
+         
+
+        //static string path = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\DecaBank.Data\\Data.Json\\";
+        static string path = "src/DecaBank.Data/Data.Json/";
 
         private const string adminPassword = "Secret@123";
         private const string regularPassword = "P@ssw0rd";
@@ -52,6 +58,12 @@ namespace DecaBank.Data
                 }
 
                 //Seed Users with 1(one) Admin User
+
+                if (isDev)
+                {
+
+                }
+
                 var appUsers = GetSampleData<AppUser>(File.ReadAllText(path + "Customer.json"));
                 var (adminCount, customerCount) = (0, 0);
 
