@@ -12,7 +12,7 @@ namespace DecaBank.Data
 {
     public class Preseeder
     {
-        static string path = Directory.GetParent(Directory.GetCurrentDirectory()) + "\\DecaBank.Data\\Data.json\\";
+        static string path = Directory.GetParent(Directory.GetCurrentDirectory()) + "/DecaBank.Data/Data.json/";
 
         private const string adminPassword = "Secret@123";
         private const string regularPassword = "P@ssw0rd";
